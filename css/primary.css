@@ -32,7 +32,7 @@ body:before {
 }
 
 .top-nav-collapse {
-  background: linear-gradient(60deg, rgba(13,	58,	131, 0.62), rgba(6,	27,	61, 0.56) 20%);}
+  background: linear-gradient(60deg, rgba(13,	58,	131, 1.62), rgba(6,	27,	61, 1.56) 20%);}
 
 .navbar:not(.top-nav-collapse) {background: #061b3d;}
 
