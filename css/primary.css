@@ -34,7 +34,7 @@ body:before {
 .top-nav-collapse {
   background: linear-gradient(60deg, rgba(0,	0,	0, 0.4), rgba(0,	0,	0, 0.4) 20%);}
 
-.navbar:not(.top-nav-collapse) {background: #061b3d;}
+.navbar:not(.top-nav-collapse) {background: rgba(0, 0, 0, 0.4);}
 
 .Screenshot 2019-11-20 at 8.07.17 PM.png{
     width: 46px;
