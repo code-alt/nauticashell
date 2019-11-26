@@ -31,12 +31,10 @@
           <h3>NauticaNode</h3>
         </center>
          <center>
-						<form action="" method="get" id="web-search-box" style="transform:scale(1.1)">
-							<p>
-								<input type="text" placeholder="Enter URL" style="border:none;border-radius: 5px;padding:10px;" id="url" name="url" />&nbsp;
-								<input type="submit" style="border:none;border-radius: 5px;padding:10px;width:40px;background:#704ea0;color:#fff;font-weight:bold;" value="GO" />
-							</p>
-						</form>
+            <form method="POST" onsubmit='handleClick(document.getElementById("url").value);'>
+                <input id="url" class="url" placeholder="Enter URL" type="text" name='cdURL' required="" align="center">
+                <button class="submit">Go</button>
+            </form>
         </center>
         <div class="d-box">
         <center><h4>Features:</h4></center>
@@ -48,23 +46,14 @@
         <center><h5><a href="contact.html"><font color="white">If you have any issues, be sure to contact staff by clicking here</font></a></h6>
         </div>
       </div>
-      <script>
-   function $(id) {
-          return document.getElementById(id);
-        }
-        $('web-search-box').onsubmit = function() {
-          var url = $('url').value;
-          //this is the URL for the server
-           window.location.href = `https://helloitguys.ml/khan-academy/${url}`;
-          return false;
-        };
-        window.onload = function() {
-          $('url').focus();
-        }
-      </script>    
 </div>
   </div>
   </div>
   </div>
+	       <script>
+        function handleClick(url) {
+          window.open("https://mun." + document.domain + "/textbooks/" + url);
+        }
+   </script> 
 </body>
 </html>
